@@ -1,0 +1,41 @@
+#root header .top-menu {
+  position: relative; }
+  #root header .top-menu .logarea {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background: #424a5d;
+    right: 0;
+    top: 60px;
+    display: none;
+    z-index: 9999; }
+    #root header .top-menu .logarea input, #root header .top-menu .logarea button {
+      border: none; }
+    #root header .top-menu .logarea input {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+      height: 35px; }
+    #root header .top-menu .logarea .btns {
+      width: 80%;
+      height: 30px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px; }
+      #root header .top-menu .logarea .btns a {
+        display: block;
+        background: #ffd777;
+        width: 35%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #aeb2b7; }
+    #root header .top-menu .logarea span {
+      padding-top: 30px;
+      display: block;
+      width: 80%;
+      height: 20px;
+      margin: 0 auto;
+      color: #aeb2b7; }
