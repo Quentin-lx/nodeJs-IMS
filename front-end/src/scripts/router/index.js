@@ -12,7 +12,9 @@ window.router = router
 
 router.route('/index', index)
 router.route('/info', info.info)
-
+router.route('/info_add',info.add)
+router.route('/info_update',info.update)
+router.route('/info_pagelist/:page',info.info)
 router.route('*', (req, res, next) => {
   res.redirect('/index')
 })

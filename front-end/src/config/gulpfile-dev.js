@@ -103,7 +103,7 @@ function watchFiles() {
   watch('../libs/*', series(copylibs))
   watch('../**/*', series(packJS))
   watch('../**/*.scss', series(packSCSS))
-  watch('../assets/*', series(copyassets))
+  watch('../assets/**/*', series(copyassets))
 }
 
 exports.default = series(parallel(copyhtml, copyassets, copylibs,copylibs2, packSCSS, packJS), parallel(gulpServer, watchFiles))

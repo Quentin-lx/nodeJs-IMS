@@ -31,12 +31,15 @@ class HeaderV{
         
     }
     async logEvent(url){
+        
         let data = $(".logarea").serialize()
+        
         let result = await httpModel.get({
             url,
             data,
             type:"POST"
         })
+        // console.log(result)
         this.logRequestSuccess(result)
     }
     async onsignin(){

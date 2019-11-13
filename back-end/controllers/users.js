@@ -40,9 +40,10 @@ const hasSame = async function(req,res,next){
   }else{
     next()
   }
-}
+} 
 const signin = async function(req,res,next){
   res.set("Content-Type","application/json;charset=utf-8")
+  console.log(req.body)
   let { username , password } = req.body
   let result = await usersModel.hasSame({username});
   // let result = await usersModel.signin({

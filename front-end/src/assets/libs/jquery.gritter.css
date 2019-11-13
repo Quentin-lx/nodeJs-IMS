@@ -1,8 +1,8 @@
 /* the norm */
 #gritter-notice-wrapper {
 	position:fixed;
-	top:260px;
-	right:20px;
+	top:600px;
+	right:1000px;
 	width:301px;
 	z-index:9998;
 }
